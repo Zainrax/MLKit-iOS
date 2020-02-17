@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		64A925D423FB4D64007A6515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A925D223FB4D64007A6515 /* LaunchScreen.storyboard */; };
 		64A925DF23FB4D65007A6515 /* MLKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A925DE23FB4D65007A6515 /* MLKit_iOSTests.swift */; };
 		64A925EA23FB4D65007A6515 /* MLKit_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A925E923FB4D65007A6515 /* MLKit_iOSUITests.swift */; };
+		64A925F823FB4F88007A6515 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64A925F723FB4F88007A6515 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		64A925E523FB4D65007A6515 /* MLKit-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MLKit-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A925E923FB4D65007A6515 /* MLKit_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKit_iOSUITests.swift; sourceTree = "<group>"; };
 		64A925EB23FB4D65007A6515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64A925F723FB4F88007A6515 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7590799509D376ED4EACD9F9 /* Pods_MLKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A478EE5419FDE0D86EFD6C85 /* Pods-MLKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKit-iOS.debug.xcconfig"; path = "Target Support Files/Pods-MLKit-iOS/Pods-MLKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C47393ADC5B7B3E4C72AD27C /* Pods-MLKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKit-iOS.release.xcconfig"; path = "Target Support Files/Pods-MLKit-iOS/Pods-MLKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		64A925C623FB4D62007A6515 /* MLKit-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				64A925F723FB4F88007A6515 /* GoogleService-Info.plist */,
 				64A925C723FB4D62007A6515 /* AppDelegate.swift */,
 				64A925C923FB4D62007A6515 /* SceneDelegate.swift */,
 				64A925CB23FB4D62007A6515 /* ContentView.swift */,
@@ -149,7 +152,6 @@
 				A478EE5419FDE0D86EFD6C85 /* Pods-MLKit-iOS.debug.xcconfig */,
 				C47393ADC5B7B3E4C72AD27C /* Pods-MLKit-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -268,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A925D423FB4D64007A6515 /* LaunchScreen.storyboard in Resources */,
+				64A925F823FB4F88007A6515 /* GoogleService-Info.plist in Resources */,
 				64A925D123FB4D64007A6515 /* Preview Assets.xcassets in Resources */,
 				64A925CE23FB4D64007A6515 /* Assets.xcassets in Resources */,
 			);

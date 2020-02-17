@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1059210369531-61t1e3qe07e033reeb7uod8g1ak51csr.apps.googleusercontent.com</string>
+	<string>1059210369531-a76jfop1l4br1tm172tm2ebu9un7ev7e.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1059210369531-61t1e3qe07e033reeb7uod8g1ak51csr</string>
+	<string>com.googleusercontent.apps.1059210369531-a76jfop1l4br1tm172tm2ebu9un7ev7e</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDtRGEGRLwQ2auz198ZME8YTmVMOAWbs_k</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.logoseros.Vision-ML</string>
+	<string>logoseros.MLKit-iOS</string>
 	<key>PROJECT_ID</key>
 	<string>vision-mlkit-ios</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1059210369531:ios:e7665280c6eeb669f3535e</string>
+	<string>1:1059210369531:ios:7623868c2f03c287f3535e</string>
 	<key>DATABASE_URL</key>
 	<string>https://vision-mlkit-ios.firebaseio.com</string>
 </dict>
