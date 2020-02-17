@@ -17,6 +17,8 @@
 		64A925DF23FB4D65007A6515 /* MLKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A925DE23FB4D65007A6515 /* MLKit_iOSTests.swift */; };
 		64A925EA23FB4D65007A6515 /* MLKit_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A925E923FB4D65007A6515 /* MLKit_iOSUITests.swift */; };
 		64A925F823FB4F88007A6515 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64A925F723FB4F88007A6515 /* GoogleService-Info.plist */; };
+		64D012C323FB59A100A27D2F /* MLKitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D012C223FB59A100A27D2F /* MLKitModel.swift */; };
+		7386A92156412B5397C35F4D /* libPods-MLKit-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B66E62A9A8C0FB0EF3D4BA /* libPods-MLKit-iOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +54,13 @@
 		64A925E923FB4D65007A6515 /* MLKit_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKit_iOSUITests.swift; sourceTree = "<group>"; };
 		64A925EB23FB4D65007A6515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64A925F723FB4F88007A6515 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64D012C223FB59A100A27D2F /* MLKitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLKitModel.swift; sourceTree = "<group>"; };
 		7590799509D376ED4EACD9F9 /* Pods_MLKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD1A862B982118BEF1CC7BA /* Pods-MLKit-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKit-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-MLKit-iOSTests/Pods-MLKit-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		90B66E62A9A8C0FB0EF3D4BA /* libPods-MLKit-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLKit-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A478EE5419FDE0D86EFD6C85 /* Pods-MLKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKit-iOS.debug.xcconfig"; path = "Target Support Files/Pods-MLKit-iOS/Pods-MLKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C47393ADC5B7B3E4C72AD27C /* Pods-MLKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKit-iOS.release.xcconfig"; path = "Target Support Files/Pods-MLKit-iOS/Pods-MLKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F9E323F5BEC9B0016B4DEFA7 /* Pods-MLKit-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLKit-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MLKit-iOSTests/Pods-MLKit-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7386A92156412B5397C35F4D /* libPods-MLKit-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,7 @@
 				64A925C723FB4D62007A6515 /* AppDelegate.swift */,
 				64A925C923FB4D62007A6515 /* SceneDelegate.swift */,
 				64A925CB23FB4D62007A6515 /* ContentView.swift */,
+				64D012C223FB59A100A27D2F /* MLKitModel.swift */,
 				64A925CD23FB4D64007A6515 /* Assets.xcassets */,
 				64A925D223FB4D64007A6515 /* LaunchScreen.storyboard */,
 				64A925D523FB4D64007A6515 /* Info.plist */,
@@ -151,6 +159,8 @@
 			children = (
 				A478EE5419FDE0D86EFD6C85 /* Pods-MLKit-iOS.debug.xcconfig */,
 				C47393ADC5B7B3E4C72AD27C /* Pods-MLKit-iOS.release.xcconfig */,
+				F9E323F5BEC9B0016B4DEFA7 /* Pods-MLKit-iOSTests.debug.xcconfig */,
+				8FD1A862B982118BEF1CC7BA /* Pods-MLKit-iOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -159,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				7590799509D376ED4EACD9F9 /* Pods_MLKit_iOS.framework */,
+				90B66E62A9A8C0FB0EF3D4BA /* libPods-MLKit-iOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64A925F123FB4D65007A6515 /* Build configuration list for PBXNativeTarget "MLKit-iOSTests" */;
 			buildPhases = (
+				F7480A92A55A887E4FE66E8B /* [CP] Check Pods Manifest.lock */,
 				64A925D623FB4D65007A6515 /* Sources */,
 				64A925D723FB4D65007A6515 /* Frameworks */,
 				64A925D823FB4D65007A6515 /* Resources */,
@@ -332,6 +344,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F7480A92A55A887E4FE66E8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLKit-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -340,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A925C823FB4D62007A6515 /* AppDelegate.swift in Sources */,
+				64D012C323FB59A100A27D2F /* MLKitModel.swift in Sources */,
 				64A925CA23FB4D62007A6515 /* SceneDelegate.swift in Sources */,
 				64A925CC23FB4D62007A6515 /* ContentView.swift in Sources */,
 			);
@@ -511,6 +546,30 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MLKit-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = B8CV6AQMA8;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+					"\"${PODS_ROOT}/Firebase/Core/Sources\"",
+					"${SRCROOT}/Pods/Firebase/CoreOnly/Sources",
+				);
 				INFOPLIST_FILE = "MLKit-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,6 +591,30 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MLKit-iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = B8CV6AQMA8;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+					"\"${PODS_ROOT}/Firebase/Core/Sources\"",
+					"${SRCROOT}/Pods/Firebase/CoreOnly/Sources",
+				);
 				INFOPLIST_FILE = "MLKit-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,6 +629,7 @@
 		};
 		64A925F223FB4D65007A6515 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E323F5BEC9B0016B4DEFA7 /* Pods-MLKit-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +652,7 @@
 		};
 		64A925F323FB4D65007A6515 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD1A862B982118BEF1CC7BA /* Pods-MLKit-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

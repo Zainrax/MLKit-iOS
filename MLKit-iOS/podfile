@@ -1,12 +1,18 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+target 'MLKit-iOSTests' do
+    inherit! :search_paths
+    pod 'Firebase'
+end
+
 target 'MLKit-iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for Vision+ML Example
   # add the Firebase pod for Google Analytics
+  pod 'Firebase'
   pod 'Firebase/Analytics'
   pod 'Firebase/MLVision'
   pod 'Firebase/MLVisionLabelModel'

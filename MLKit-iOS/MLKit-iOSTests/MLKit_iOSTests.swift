@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Firebase
 @testable import MLKit_iOS
 
 class MLKit_iOSTests: XCTestCase {
