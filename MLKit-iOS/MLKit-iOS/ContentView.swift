@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    var images: [UIImage]
-    let mlkit = MLKitModel()
+    @ObservedObject var mlkit = MLKitModel()
+    @State var images: [UIImage]
     
     var imageView: some View {
         ScrollView(.vertical){
             VStack{
-                ForEach(images, id: \.self){ image in
+                ForEach(self.mlkit.images, id: \.self){ image in
                     Image(uiImage: image)
                     .resizable()
                     .aspectRatio(contentMode: ContentMode.fit)
@@ -29,8 +29,8 @@ struct ContentView: View {
         GeometryReader{ geo in
             HStack {
                 Button(action: {
-                    self.mlkit.images = self.images
                     self.mlkit.evaluate()
+                    self.images += self.mlkit.images
                 }) {
                 Text("Evaluate")
                 }
