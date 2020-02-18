@@ -13,6 +13,7 @@ import Firebase
 class MLKitModel: ObservableObject {
     @Published var images: [(image:UIImage, classifications: [String])] = []
     var imageManager: PHImageManager = PHImageManager()
+    let limit = 20
     
     init() {
         self.fetchPhotos()
@@ -20,7 +21,7 @@ class MLKitModel: ObservableObject {
     
     public func fetchPhotos() {
         let fetchOptions = PHFetchOptions()
-        fetchOptions.fetchLimit = 10
+        fetchOptions.fetchLimit = self.limit
         
         let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: PHAssetMediaType.image, options: fetchOptions)
         
