@@ -10,16 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var mlkit = MLKitModel()
-    @State var images: [UIImage]
-    
+
     var imageView: some View {
         ScrollView(.vertical){
             VStack{
-                ForEach(self.mlkit.images, id: \.self){ image in
-                    Image(uiImage: image)
+                ForEach(0..<self.mlkit.images.count, id: \.self){ x in
+                    VStack{
+                        Image(uiImage: self.mlkit.images[x].image)
                     .resizable()
                     .aspectRatio(contentMode: ContentMode.fit)
                     .frame(width: 300, height: 300, alignment: .center)
+                            VStack{
+                            ForEach(self.mlkit.images[x].classifications, id: \.self) { label in
+                                Text(label)
+                            }
+                        }.frame(width: 400, alignment: .center)
+                    }
                 }
             }
         }
@@ -30,7 +36,6 @@ struct ContentView: View {
             HStack {
                 Button(action: {
                     self.mlkit.evaluate()
-                    self.images += self.mlkit.images
                 }) {
                 Text("Evaluate")
                 }
@@ -49,6 +54,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let images = (1...10).map{UIImage(named: "IMG\($0)")}
-        return ContentView(images: images as! [UIImage])
+        return ContentView()
     }
 }
